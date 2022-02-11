@@ -38,12 +38,11 @@ def hilbertCurve(n, w, l):
             h.right(math.pi/2)
         j += 1
 if __name__ == "__main__":
+
+    n = int(input("Enter an integer value: "))
     sc = turtle.Screen()
     sc.setup(600, 600)
     sc.bgcolor(0, 0, 0)
     sc.colormode(255)
-
-    n = int(input("Enter an integer value: "))
     hilbertCurve(n, 500, 500)
     turtle.done()
-
